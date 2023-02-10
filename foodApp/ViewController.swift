@@ -16,10 +16,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     let data = [
         ["밥은", "휘경곱창", "둘리"],
-        ["민들레초밥"],
+        ["민들레 초밥"],
         ["용궁중화요리", "고빠루"],
         ["노랑통닭", "맘스터치", "BHC치킨"],
-        ["민들레뜨락", "키라키라윤"]
+        ["킹콩 떡볶이"],
+        ["민들레 뜨락", "키라키라윤"]
     ]
     
     
@@ -86,12 +87,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 2:
             return "중식"
         case 3:
-            return "양식"
+            return "패스트푸드"
         case 4:
             return "분식"
         case 5:
-            return "패스트푸드"
-        case 6:
             return "주점"
         default:
             return ""
