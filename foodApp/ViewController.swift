@@ -53,6 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return data.count
     }
     
+    // 셀 UI수정 코드
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView{
             headerView.textLabel?.textColor = .black
@@ -60,6 +61,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             headerView.textLabel?.font = UIFont(name: "copperplate-Bold", size: 18)
         }
     }
+    
+    // 화면 전환 데이터 이동
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nextViewController : DataViewController = segue.destination as? DataViewController else {
+            return
+        }
+        guard let cell: UITableViewCell = sender as? UITableViewCell else {
+            return
+        }
+        nextViewController.textToSet = cell.textLabel?.text
+        // 다음 VC의 textToSet이라는 변수에, 현재 VC의 textLabel값을 전달
+    }
+    
+    
     
     // 테이블뷰 섹션 별 헤더 이름 지정
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

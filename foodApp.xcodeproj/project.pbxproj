@@ -13,6 +13,7 @@
 		4C1FE2B2299648AA007DD401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FE2B0299648AA007DD401 /* Main.storyboard */; };
 		4C1FE2B4299648AB007DD401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FE2B3299648AB007DD401 /* Assets.xcassets */; };
 		4C1FE2B7299648AB007DD401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FE2B5299648AB007DD401 /* LaunchScreen.storyboard */; };
+		4C1FE2BF29965714007DD401 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FE2BE29965714007DD401 /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4C1FE2B3299648AB007DD401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1FE2B6299648AB007DD401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1FE2B8299648AB007DD401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1FE2BE29965714007DD401 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				4C1FE2AC299648AA007DD401 /* SceneDelegate.swift */,
 				4C1FE2AE299648AA007DD401 /* ViewController.swift */,
 				4C1FE2B0299648AA007DD401 /* Main.storyboard */,
+				4C1FE2BE29965714007DD401 /* DataViewController.swift */,
 				4C1FE2B3299648AB007DD401 /* Assets.xcassets */,
 				4C1FE2B5299648AB007DD401 /* LaunchScreen.storyboard */,
 				4C1FE2B8299648AB007DD401 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1FE2BF29965714007DD401 /* DataViewController.swift in Sources */,
 				4C1FE2AF299648AA007DD401 /* ViewController.swift in Sources */,
 				4C1FE2AB299648AA007DD401 /* AppDelegate.swift in Sources */,
 				4C1FE2AD299648AA007DD401 /* SceneDelegate.swift in Sources */,
