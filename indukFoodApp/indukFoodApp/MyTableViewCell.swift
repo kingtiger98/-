@@ -10,7 +10,10 @@ import UIKit
 class MyTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var myLable: UILabel!
+    @IBOutlet weak var resstImg: UIImageView! // 식당 이미지 레이블
+    @IBOutlet weak var nameLbl: UILabel!      // 식당 이름 레이블
+    @IBOutlet weak var categoryLbl: UILabel!  // 음식 종류 레이블
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
