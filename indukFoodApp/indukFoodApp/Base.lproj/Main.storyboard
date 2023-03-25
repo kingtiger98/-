@@ -73,7 +73,6 @@
                                             <outlet property="categoryLbl" destination="x2l-La-h2o" id="Qka-EI-xjV"/>
                                             <outlet property="nameLbl" destination="e21-UO-Zg4" id="CC7-iJ-PiE"/>
                                             <outlet property="resstImg" destination="Bbb-Al-BQt" id="CD5-kU-aPM"/>
-                                            <segue destination="0pI-PN-oQ6" kind="showDetail" identifier="showDetail" id="0lK-2y-SUQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -90,11 +89,12 @@
                     </view>
                     <connections>
                         <outlet property="table" destination="4re-1d-z8g" id="dG8-FT-22d"/>
+                        <segue destination="0pI-PN-oQ6" kind="showDetail" identifier="showDetail" id="idb-e3-uSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-443" y="-513"/>
+            <point key="canvasLocation" x="-543" y="-560"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="6sp-48-C68">
@@ -193,6 +193,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="전화"/>
+                                <connections>
+                                    <action selector="callBtn:" destination="0pI-PN-oQ6" eventType="touchUpInside" id="mwO-z9-DbN"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" translatesAutoresizingMaskIntoConstraints="NO" id="Pd3-St-5bH">
                                 <rect key="frame" x="20" y="20" width="110" height="111"/>
@@ -209,6 +212,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="지도"/>
+                                <connections>
+                                    <action selector="mapBtn:" destination="0pI-PN-oQ6" eventType="touchUpInside" id="BFx-fe-PAw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eyj-04-kbJ"/>
@@ -235,6 +241,11 @@
                             <constraint firstItem="T50-xe-tXN" firstAttribute="bottom" secondItem="Pd3-St-5bH" secondAttribute="bottom" id="u8k-pM-JkR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mTable" destination="LhW-ah-EY1" id="MbB-Rk-qfl"/>
+                        <outlet property="nameLbl" destination="hLj-85-Jpd" id="48D-6S-TqE"/>
+                        <outlet property="restImg" destination="Pd3-St-5bH" id="BPw-fi-Dpv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eY-Y4-79R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
