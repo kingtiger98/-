@@ -34,7 +34,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = table.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyTableViewCell
         cell.nameLbl.text = "치킨"
         cell.categoryLbl.text = "양식"
+        cell.resstImg.image = UIImage(named: "\(indexPath.row).png")
         return cell
+        
         
         // 제공 해주는 스타일의 cell 사용법! ========================================================================
         //        // UITableViewCell의 인스턴스 cell 생성
@@ -42,5 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //        // cell의 textLabel에 indexPath.row값 출력
         //        cell.textLabel?.text = "\(indexPath.row)"
     }
+    
+    
 }
 
